@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SVG</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+		<style type="text/css">
+			* {margin: 0; padding: 0;}
+
+			.hodina {
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-image: linear-gradient(45deg, #a7d, #7ad, #d7a);
+			}
+
+			.lala {
+				animation: lala;
+				animation-duration: 3s;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes lala {
+				0% {transform: rotate(45deg)}
+				50% {transform: rotate(0deg)}
+				100% {transform: rotate(45deg)}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="hodina">
+			<h2 align="center">HTML5 SVG</h2>
+			<svg id="" height="100">
+				<circle id="redcircle" cx="50" cy="50" r="50" fill="blue">
+			</svg>
+			<svg id="" height="100">
+				<circle id="redcircle" cx="50" cy="50" r="50" fill="red" style="stroke-width: 5; stroke: rgb(0,0,0)">
+			</svg>
+			<svg id="" height="100">
+				<ellipse cx="100" cy="50" rx="100" ry="50" fill="green">
+			</svg>
+			<svg id="" height="100">
+				<rect id="redrect" width="300" height="100" fill="black">
+			</svg>
+		</div>
+		<!-- 2. hodina -->
+		<div class="hodina">
+			<svg style="width: 400; height: 400;">
+				<polygon points="
+					200,0 400,200 350,200 350,400 50,400 50,200 0,200
+				" fill="red" />
+			</svg>
+		</div>
+		<!-- 3. hodina -->
+		<div class="hodina">
+			<svg style="width: 200; height: 200;">
+				<polygon points="
+					100,0
+						130,35
+					200,40
+						140,60
+					150,100
+						100,65 
+					50,100
+						60,60
+					0,40
+						70,35
+				" fill="red" />
+			</svg>
+		</div>
+		<div class="hodina" style="background: white">
+			<svg style="width: 100%; height: 70vh; justify-content: center; align-items: center;">
+				<circle r="200" cx="50%" cy="50%" fill="#0000" stroke="black" stroke-width="30" stroke-dasharray="3%" />
+				<circle r="200" cx="50%" cy="50%" fill="#0000" stroke="white" stroke-width="31" stroke-dasharray="628" />
+				<circle r="20" cx="50%" cy="50%" fill="#black" />
+				<line x1="50%" y1="50%" x2="50%" y2="40%" stroke="black" stroke-width="5"/>
+			</svg>
+			<input type="range" name="nwm" id="tachometer">
+			<script type="text/javascript">
+				var hod = documet.getElementsById('tachometer').value;
+			</script>
+		</div>
+		<!-- 4. hodina -->
+		<div class="hodina">
+			<svg style="width: 1000px; height: 500px;">
+				<rect x="50%" y="50%" width="100" height="100" fill="pink" stroke="purple" stroke-width="5" transform="rotate(45, 550, 300)" />
+				<rect x="50%" y="50%" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" transform="translate(100, 100) rotate(45, 550, 300)" />
+				<rect x="50%" y="50%" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" transform="translate(-100, 100) rotate(45, 550, 300)" />
+				<rect x="50%" y="50%" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" transform="translate(-100, -100) rotate(45, 550, 300)" />
+				<rect x="50%" y="50%" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" transform="translate(100, -100) rotate(45, 550, 300)" />
+			</svg>
+		</div>
+		<!-- 5. hodina -->
+		<div class="hodina">
+			<svg style="width: 1000px; height: 500px;">
+				<rect class="lala" x="120" y="10" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" />
+				<rect class="lala" x="120" y="10" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" style="animation-delay: 0.1s" />
+				<rect class="lala" x="120" y="10" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" style="animation-delay: 0.2s" />
+				<rect class="lala" x="120" y="10" width="100" height="100" fill="orange" stroke="cyan" stroke-width="5" style="animation-delay: 0.3s" />
+				<rect class="lala" x="120" y="10" width="100" height="100" fill="pink" stroke="purple" stroke-width="5" style="animation-delay: 0.4s" />
+			</svg>
+		</div>
+		<div class="hodina">
+			<svg style="width: 500px; height: 500px;">
+				<ellipse id="jedna" rx="120" ry="50" cx="250" cy="250" fill="none" stroke="cyan" stroke-width="8" transform="rotate(0, 250, 250)"/>
+				<ellipse rx="120" ry="50" cx="250" cy="250" fill="none" stroke="cyan" stroke-width="8" transform="rotate(60, 250, 250)"/>
+				<ellipse rx="120" ry="50" cx="250" cy="250" fill="none" stroke="cyan" stroke-width="8" transform="rotate(120, 250, 250)"/>
+				<circle r="25 " cx="250" cy="250" fill="cyan" stroke="none" stroke-width="0"/>
+			</svg>
+		</div>
+		<div class="hodina">
+			<svg style="width: 500px; height: 500px;">
+				<ellipse id="jedna" rx="120" ry="50" cx="250" cy="250" fill="none" stroke="cyan" stroke-width="8" transform="rotate(0, 250, 250)"/>
+				<ellipse rx="120" ry="50" cx="250" cy="250" fill="none" stroke="cyan" stroke-width="8" transform="rotate(60, 250, 250)"/>
+				<ellipse rx="120" ry="50" cx="250" cy="250" fill="none" stroke="cyan" stroke-width="8" transform="rotate(120, 250, 250)"/>
+				<circle r="25 " cx="250" cy="250" fill="cyan" stroke="none" stroke-width="0"/>
+			</svg>
+		</div>
+		<!-- 6. hodina -->
+		<div class="hodina">
+			<svg style="width: 1000px; height: 500px;">
+				<path d="M 10 10 H 20 V 90 H 60 V 100 H 10 Z" stroke-width="3" stroke="#fff" fill="#5656FF"/>
+				<path d="M 100 300 Q 150 50 250 150 Q 300 650 300 300 Q 300 150 400 300 C 400 750 450 50 400 100 C 550 50 350 750 650 300 A 50 50 0 1 1 750 200 " stroke-width="3" stroke="#fff" fill="#5656FF"/>
+			</svg>
+		</div>
+		<div class="hodina" style="background-image: linear-gradient(45deg, #333, #262626)">
+			<div style="transform: rotate(45deg, 50%, 50%); display: flex;align-items: center;justify-content: center;">
+				<svg style="width: 300px; height: 300px; display: inline-block;" xmlns="http://www.w3.org/2000/svg">
+					<g stroke="green" stroke-width="5" fill="none">
+						<circle r="50" cx="150" cy="150" transform="rotate(30, 150, 150)"/>
+						<path d="M 150 100 Q 165 150 150 200" transform="rotate(30, 150, 150)"/>
+						<path d="M 104 130 Q 150 150 196 130" transform="rotate(30, 150, 150)"/>
+						<path d="M 104 170 Q 150 150 196 170" transform="rotate(30, 150, 150)"/>
+						<animateTransform
+								attributeName="transform"
+	                            attributeType="XML"
+	                            type="rotate"
+		                        from="0 150 150"
+		                        to="360 150 150"
+		                        dur="30s"
+		                        repeatCount="indefinite" />
+						<!-- <animateTransform
+								attributeName="transform"
+	                            attributeType="XML"
+	                            type="translate"
+		                        from="0 0"
+		                        to="50% 0"
+		                        dur="5s"
+		                        repeatCount="indefinite" /> -->
+					</g>
+				</svg>
+				<h1 style="display: inline-block; font-size: 4em;font-family: 'Chango', cursive;color: green; margin-left: -70px;">Basketball</h1>
+			</div>
+		</div>
+	</body>
+</html>
+
+<!-- POZNÁMKY
+
+kreslenie SVG
+	http://sean.brunnock.com/React/DrawSVG/
