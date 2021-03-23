@@ -3,8 +3,11 @@
 	<head>
 		<title>SVG</title>
 		<meta charset="utf-8">
+
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+		
 		<style type="text/css">
 			* {margin: 0; padding: 0;}
 
@@ -129,7 +132,7 @@
 		<div class="hodina" style="background-image: linear-gradient(45deg, #333, #262626)">
 			<div style="transform: rotate(45deg, 50%, 50%); display: flex;align-items: center;justify-content: center;">
 				<svg style="width: 300px; height: 300px; display: inline-block;" xmlns="http://www.w3.org/2000/svg">
-					<g stroke="green" stroke-width="5" fill="none">
+					<g stroke="url(#grad1)" stroke-width="5" fill="none">
 						<circle r="50" cx="150" cy="150" transform="rotate(30, 150, 150)"/>
 						<path d="M 150 100 Q 165 150 150 200" transform="rotate(30, 150, 150)"/>
 						<path d="M 104 130 Q 150 150 196 130" transform="rotate(30, 150, 150)"/>
@@ -142,19 +145,55 @@
 		                        to="360 150 150"
 		                        dur="30s"
 		                        repeatCount="indefinite" />
-						<!-- <animateTransform
-								attributeName="transform"
-	                            attributeType="XML"
-	                            type="translate"
-		                        from="0 0"
-		                        to="50% 0"
-		                        dur="5s"
-		                        repeatCount="indefinite" /> -->
-		                       	<!-- Ježiš je môj Pán a Kráľ -->
+						<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+					      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+					      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+					    </linearGradient>
+                       	<!-- Ježiš je môj Pán a Kráľ -->
 					</g>
 				</svg>
-				<h1 style="display: inline-block; font-size: 4em;font-family: 'Chango', cursive;color: green; margin-left: -70px;">Basketball</h1>
+				<h1 style="display: inline-block; font-size: 4em;font-family: 'Chango', cursive; margin-left: -70px;background: -webkit-linear-gradient( #ff0, #f00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Basketball</h1>
 			</div>
+		</div>
+		<div class="hodina" style="background-image: linear-gradient(45deg, #333, #262626)">
+			<div style="transform: rotate(45deg, 50%, 50%); display: flex;align-items: center;justify-content: center;">
+				<svg style="width: 900px; height: 300px; display: inline-block;" xmlns="http://www.w3.org/2000/svg">
+					<g stroke="url(#grad2)" stroke-width="5" fill="none">
+						<circle r="50" cx="150" cy="150" transform="rotate(30, 150, 150)"/>
+						<path d="M 150 100 Q 165 150 150 200" transform="rotate(30, 150, 150)"/>
+						<path d="M 104 130 Q 150 150 196 130" transform="rotate(30, 150, 150)"/>
+						<path d="M 104 170 Q 150 150 196 170" transform="rotate(30, 150, 150)"/>
+						<animateTransform
+								attributeName="transform"
+	                            attributeType="XML"
+	                            type="rotate"
+		                        from="0 150 150"
+		                        to="360 150 150"
+		                        dur="30s"
+		                        repeatCount="indefinite" />
+						<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+					      <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+					      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+					    </linearGradient>
+					</g>
+                   	<text x="250" y="175" style="font-size: 4em;font-family: 'Chango', cursive;" stroke="url(#grad2)" stroke-width="5" fill="none">
+                   		<tspan>Basketball</tspan>
+                   		<!-- <tspan style="font-size: 1em;">najlepšia hra ...</tspan> -->
+                   	</text>
+                   	<!-- Ježiš je môj Pán a Kráľ -->
+				</svg>
+				<!-- <h1 style="display: inline-block; font-size: 4em;font-family: 'Chango', cursive; margin-left: -70px;background: -webkit-linear-gradient( #ff0, #f00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Basketball</h1> -->
+			</div>
+		</div>
+		<div class="hodina">
+			<svg style="width: 1000px; height: 500px;">
+				<defs>
+					<path id="lalal" d="M 100 250 Q 300 100 500 250 Q 700 400 900 250 " stroke-width="3" stroke="#fff" fill="none"/>
+				</defs>
+				<text x="100" y="250" fill="#fff" style="font-family: 'Caveat', cursive;">
+					<textPath xlink:href="#lalal">Moj Boh je NAJMOCNEJŠÍ</textPath>
+				</text>
+			</svg>
 		</div>
 	</body>
 </html>
